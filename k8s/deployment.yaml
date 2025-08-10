@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: observetask-user-service
+  namespace: observetask
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: observetask-user-service
+  template:
+    metadata:
+      labels:
+        app: observetask-user-service
+    spec:
+      containers:
+      - name: observetask-user-service
+        image: observetask/observetask-user-service:latest
+        ports:
+        - containerPort: 8080
