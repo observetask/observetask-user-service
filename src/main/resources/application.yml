@@ -97,6 +97,10 @@ jwt:
   secret: ${JWT_SECRET:ObserveTask-Super-Secret-Key-For-Development-Only-2024}
   access-token-expiration: 900000    # 15 minutes
   refresh-token-expiration: 604800000 # 7 days
+  secret: "your-rsa-private-key-or-secret"
+  access-token-expiration: 900000    # 15 minutes in milliseconds
+  refresh-token-expiration: 604800000 # 7 days in milliseconds
+  issuer: "observetask"
 
 # Logging Configuration
 logging:
