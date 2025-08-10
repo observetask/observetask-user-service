@@ -12,7 +12,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.observetask.userservice.entity.RefreshToken;
-import com.observetask.userservice.entity.User;
+
 
 import jakarta.transaction.Transactional;
 
